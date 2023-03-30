@@ -51,8 +51,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			...todoActions(getStore, getActions, setStore),
 			...favoritosActions(getStore, getActions, setStore),
 			useFetch: async (endpoint, body, method = "GET") => {
-				let url = process.env.BACKEND_URL + endpoint
-				console.log(url)
+				let url = process.env.BACKEND_URL + endpoint 
 				let response = await fetch(url, {
 					method: method,
 					headers: { "Content-Type": "application/json" },
