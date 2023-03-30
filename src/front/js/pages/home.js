@@ -2,33 +2,46 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 
-const paperstyle={
-	width:"700px",
-	marginTop:"20px",
-	border:"1px",
-	borderColor:"lightgrey",
-	borderStyle:"solid",
-	background: "#fff",
-  boxShadow:
-    "0 1px 1px rgba(0,0,0,0.15),0 10px 0 -5px #eee,0 10px 1px -4px rgba(0,0,0,0.15),0 20px 0 -10px #eee,0 20px 1px -9px rgba(0,0,0,0.15)",
-    paddingVerticalñ: "30px",
-	fontSize:"30px",
-}
-const inputstyle={
-	border:"0px",
-	outline: "none",
-}
 
-const buttonstyle={
-	background: "transparent",
-	border:"0px",
-}
-const itemstyle={
-	border: "1px",
-	borderStyle:"solid",
-	borderColor:"transparent",
-	borderBottomColor:"lightgrey",
-}
+const paperstyle={
+	width:"800px",
+	marginTop:"50px",
+	border:"none",
+	background: "#f5f5f5",
+	boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
+	padding: "30px",
+	fontSize:"20px",
+  }
+  const inputstyle={
+	border:"none",
+	outline: "none",
+	padding: "10px",
+	borderRadius: "20px",
+	background: "lightgreen",
+	boxShadow: "0 5px 10px rgba(0, 0, 0, 0.1)",
+	color: "white",
+  }
+  const buttonstyle={
+	background: "#4caf50",
+	border:"none",
+	borderRadius: "20px",
+	padding: "10px 20px",
+	color: "#ff00ff",
+	fontSize: "18px",
+	cursor: "pointer",
+	alignItems: "center",
+  }
+  const itemstyle={
+	border: "none",
+	borderBottom: "1px solid #ccc",
+	padding: "10px",
+	fontSize: "16px",
+	color: "#333",
+	display: "flex",
+	justifyContent: "space-between",
+	alignItems: "center",
+  }
+  
 
 export const Home = () => {//Esta es la versión con estados dentro del componente
 	const { store, actions } = useContext(Context);

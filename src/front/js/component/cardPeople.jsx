@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+/* import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import { todoActions } from "../store/todos";
@@ -27,4 +27,4 @@ const CardPeople = (props) => {
     </>)
 }
 
-export default CardPeople;
+export default CardPeople; */

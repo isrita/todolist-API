@@ -3,6 +3,7 @@ import { usuarioStore, usuarioActions } from "./usuario.js";
 import { todoStore, todoActions } from "./todos.js";
 import { favoritosStore, favoritosActions } from "./favoritos.js";
 
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {

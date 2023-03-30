@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+/* import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
@@ -26,4 +26,4 @@ const CardPlanet = (props) => {
     </>)
 }
 
-export default CardPlanet;
+export default CardPlanet; */
